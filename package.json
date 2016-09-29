@@ -1,0 +1,19 @@
+{
+  "name": "modr-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-typescript": "^2.13.6",
+    "jquery": "^3.1.1",
+    "modr-typescript": "git+https://github.com/janrembold/modr-typescript.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
