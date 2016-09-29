@@ -1,6 +1,5 @@
-///<reference path="modr.interface.jqueryplugin.ts"/>
-///<reference path="modr.interface.loaderconfig.ts"/>
 ///<reference path="../../node_modules/modr-typescript/src/js/modr.core.loader.ts"/>
+///<reference path="../../node_modules/modr-typescript/src/js/modr.interface.jqueryplugin.ts"/>
 
 namespace Modr.Demo {
 	export class Module implements Modr.Interface.JQueryPlugin {

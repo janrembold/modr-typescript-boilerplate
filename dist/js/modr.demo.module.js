@@ -1,6 +1,5 @@
-///<reference path="modr.interface.jqueryplugin.ts"/>
-///<reference path="modr.interface.loaderconfig.ts"/>
 ///<reference path="../../node_modules/modr-typescript/src/js/modr.core.loader.ts"/>
+///<reference path="../../node_modules/modr-typescript/src/js/modr.interface.jqueryplugin.ts"/>
 var Modr;
 (function (Modr) {
     var Demo;

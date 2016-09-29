@@ -1,6 +1,5 @@
-///<reference path="modr.interface.jqueryplugin.ts"/>
-///<reference path="modr.interface.loaderconfig.ts"/>
 ///<reference path="../../node_modules/modr-typescript/src/js/modr.core.loader.ts"/>
+///<reference path="../../node_modules/modr-typescript/src/js/modr.interface.jqueryplugin.ts"/>
 var Modr;
 (function (Modr) {
     var Demo;
@@ -11,33 +10,7 @@ var Modr;
                     foo: 'bar'
                 };
                 this._dependencies = {
-                    // fullConfig: {
-                    // 	resources: [
-                    // 		{
-                    // 			paths: [
-                    // 				'modr.myplugin.module.css',
-                    // 				'modr.myplugin.module2.css'
-                    // 			],
-                    // 			base: '/cdn/v1.2/'
-                    // 		},
-                    // 		{
-                    // 			paths: [
-                    // 				'modr.myplugin.module.js',
-                    // 				'boiler.js'
-                    // 			]
-                    // 		}
-                    // 	],
-                    // 	modr: [
-                    // 		{name: 'MyPlugin', module: 'Module'}
-                    // 	],
-                    // 	init: function ($element?:JQuery) {
-                    // 		console.log('do something');
-                    // 	},
-                    // 	test: function () {
-                    // 		return true
-                    // 	}
-                    // },
-                    testConfig: {
+                    config1: {
                         resources: [
                             {
                                 paths: ['modr.demo.module.js']
@@ -63,10 +36,7 @@ var Modr;
             Base.prototype.init = function () {
                 var self = this;
                 self.$element.append(' => Done - Option "foo" = "' + self.options.foo + '"');
-                Modr.Core.Loader.load(self._dependencies.testConfig, self.$element);
-            };
-            Base.prototype.test = function (value) {
-                if (value === void 0) { value = 123; }
+                Modr.Core.Loader.load(self._dependencies.config1, self.$element);
             };
             /**
              * default destroy method
