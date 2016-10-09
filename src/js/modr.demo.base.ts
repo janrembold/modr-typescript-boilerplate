@@ -37,9 +37,8 @@ namespace Modr.Demo {
 		 * default init method
 		 */
 		public init():void {
-			let self = this;
-			self.$element.append(' => Done - Option "foo" = "' + self.options.foo + '"');
-			Modr.Core.Loader.load(self._dependencies.config1, self.$element);
+			this.$element.append(' => Done - Option "foo" = "' + self.options.foo + '"');
+			Modr.Core.Loader.load(this._dependencies.config1, this.$element);
 		}
 
 		/**
